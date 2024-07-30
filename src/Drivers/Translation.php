@@ -70,6 +70,7 @@ abstract class Translation
     }
 
     /**
+     *
      * Translate text using Google Translate
      *
      * @param $language
