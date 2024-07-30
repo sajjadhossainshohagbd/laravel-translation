@@ -78,7 +78,7 @@ abstract class Translation
      * @throws \ErrorException
      */
     public function getGoogleTranslate($language,$token){
-        $tr = new GoogleTranslate($language, $this->sourceLanguage);
+        $tr = new GoogleTranslate($language);
         return $tr->translate($token);
     }
 
