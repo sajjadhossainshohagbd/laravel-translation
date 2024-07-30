@@ -99,8 +99,6 @@ abstract class Translation
         foreach ($translations as $type => $groups) {
             foreach ($groups as $group => $translations) {
                 foreach ($translations as $key => $value) {
-                    //Value will be empty if it's found in the app source code but not in the source language files
-                    //We fall back to $key in that case
                     $sourceLanguageValue = in_array($value[$this->sourceLanguage], ["", null]) ? $key : $value[$this->sourceLanguage];
                     $targetLanguageValue = $value[$language];
 
